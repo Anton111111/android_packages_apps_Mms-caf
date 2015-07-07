@@ -287,7 +287,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
 
     private void updateBlacklistSummary() {
         if (mBlacklist != null) {
-            if (BlacklistUtils.isBlacklistEnabled(this)) {
+//            if (BlacklistUtils.isBlacklistEnabled(this)) {
+//Xperia don't have BlacklistUtils
+            if (false) {
                 mBlacklist.setSummary(R.string.blacklist_summary);
             } else {
                 mBlacklist.setSummary(R.string.blacklist_summary_disabled);

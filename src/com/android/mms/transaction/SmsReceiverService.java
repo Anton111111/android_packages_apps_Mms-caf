@@ -653,7 +653,8 @@ public class SmsReceiverService extends Service {
     }
 
     private boolean isBlacklisted(Context context, String number, long date) {
-        if (DEBUG) {
+//Xperia don't have BlackListUtils
+/*        if (DEBUG) {
             Log.d(TAG, "isBlacklisted(). number: " + number
                 + ", date: " + date + " is being checked against the blacklist");
         }
@@ -665,7 +666,7 @@ public class SmsReceiverService extends Service {
             }
             showBlacklistNotification(context, number, date, listType);
             return true;
-        }
+        }*/
         return false;
     }
 

@@ -3033,7 +3033,9 @@ public class ComposeMessageActivity extends Activity
         buildAddAddressToContactMenuItem(menu);
 
         // Add to Blacklist item (if enabled)
-        if (BlacklistUtils.isBlacklistEnabled(this)) {
+//        if (BlacklistUtils.isBlacklistEnabled(this)) {
+        //Xperia don't have BlackListUtils
+        if (false) {
             menu.add(0, MENU_ADD_TO_BLACKLIST, 0, R.string.add_to_blacklist)
                     .setIcon(R.drawable.ic_block_message_holo_dark)
                     .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
