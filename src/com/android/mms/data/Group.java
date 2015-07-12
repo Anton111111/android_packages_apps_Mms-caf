@@ -176,7 +176,6 @@ public class Group {
         try {
             Class.forName("android.provider.LocalGroups");
         } catch( ClassNotFoundException e ) {
-            Log.i(TAG, "LocalGroups isn't exist");
             return groups;
         }
 
