@@ -172,6 +172,14 @@ public class Group {
         }
         cursor.close();
 
+        //Check if LocalGroups is exists. We have to do it because Xperia don't have this class in framework base
+        try {
+            Class.forName("android.provider.LocalGroups");
+        } catch( ClassNotFoundException e ) {
+            Log.i(TAG, "LocalGroups isn't exist");
+            return groups;
+        }
+
         final Cursor localCursor = context.getContentResolver().query(LocalGroups.CONTENT_URI,
                 LOCAL_PROJECTION, LOCAL_SELECTION, null, LOCAL_SORT);
 
@@ -192,4 +200,6 @@ public class Group {
 
         return groups;
     }
+
+    
 }
