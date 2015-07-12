@@ -144,10 +144,10 @@
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"/>
 
-                  <ViewStub android:id="@+id/vcal_attachment_view_stub"
+                  <!--ViewStub android:id="@+id/vcal_attachment_view_stub"
                       android:layout="@layout/vcal_attachment_view"
                       android:layout_width="match_parent"
-                      android:layout_height="wrap_content"/>
+                      android:layout_height="wrap_content"/-->
 
                   <ViewStub android:id="@+id/slideshow_attachment_view_stub"
                       android:layout="@layout/slideshow_attachment_view"
