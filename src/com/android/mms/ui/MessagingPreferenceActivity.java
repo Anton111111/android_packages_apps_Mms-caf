@@ -290,11 +290,14 @@ public class MessagingPreferenceActivity extends PreferenceActivity
 
     private void updateBlacklistSummary() {
         if (mBlacklist != null) {
+	    /* Xperia doesn't have blacklist
             if (BlacklistUtils.isBlacklistEnabled(this)) {
                 mBlacklist.setSummary(R.string.blacklist_summary);
             } else {
                 mBlacklist.setSummary(R.string.blacklist_summary_disabled);
             }
+            */
+            mBlacklist.setSummary(R.string.blacklist_summary_disabled);
         }
     }
 

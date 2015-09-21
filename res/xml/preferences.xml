@@ -283,14 +283,15 @@
             android:summary="@string/pref_summary_mms_smart_dialer"
             android:defaultValue="false" />
 
-        <PreferenceScreen
+	<!-- Xperia doesn't have blacklist -->
+        <!--PreferenceScreen
                 android:key="pref_blacklist"
                 android:title="@string/blacklist_title"
                 android:persistent="false">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.settings"
                     android:targetClass="com.android.settings.Settings$BlacklistSettingsActivity" />
-        </PreferenceScreen>
+        </PreferenceScreen-->
 
         <ListPreference
             android:key="pref_key_unicode_stripping_value"
