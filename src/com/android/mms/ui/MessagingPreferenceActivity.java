@@ -648,7 +648,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private void setEnabledQmDarkThemePref() {
         // The "Use dark theme" setting is really stored in our own prefs. Read the
         // current value and set the Switch to match.
-        mEnableQmDarkThemePref.setChecked(getQmDarkThemeEnabled(this));
+        //mEnableQmDarkThemePref.setChecked(getQmDarkThemeEnabled(this));
     }
 
     private void setSmsDisplayLimit() {
